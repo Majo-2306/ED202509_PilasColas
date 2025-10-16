@@ -27,7 +27,7 @@
         {
             string datos = string.Empty;
             for (int i = 0; i < _tope; i++)
-            {
+            { 
                 string dato = _arreglo[i];
                 datos += $"{dato}{Environment.NewLine}";
             }

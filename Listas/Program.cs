@@ -4,7 +4,45 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            try
+            {
+                Pila pila = new Pila(5);
+                pila.Agregar("A");
+                pila.Agregar("B");
+                pila.Agregar("C");
+                pila.Agregar("D");
+                pila.Agregar("E");
+
+                Console.WriteLine(pila.Imprimir());
+
+                Console.WriteLine("Eliminando un elemento");
+                pila.Eliminar();
+                Console.WriteLine(pila.Imprimir());
+
+                Console.WriteLine("Eliminando un elemento");
+                pila.Eliminar();
+                Console.WriteLine(pila.Imprimir());
+
+                Console.WriteLine("Eliminando un elemento");
+                pila.Eliminar();
+                Console.WriteLine(pila.Imprimir());
+
+                Console.WriteLine("Eliminando un elemento");
+                pila.Eliminar();
+                Console.WriteLine(pila.Imprimir());
+
+                Console.WriteLine("Eliminando un elemento");
+                pila.Eliminar();
+                Console.WriteLine(pila.Imprimir());
+
+                Console.WriteLine("Eliminando un elemento");
+                pila.Eliminar();
+                Console.WriteLine(pila.Imprimir());
+            }
+            catch (Exception ex) 
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
     }
 }
