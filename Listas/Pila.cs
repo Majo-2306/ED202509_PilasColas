@@ -8,8 +8,8 @@ namespace Listas
 {
     internal class Pila
     {
-        List<string> lista;
-        int _tope;
+        List<string> lista = new List<string>();//aca inicializamos lo que es la lista y donde quiero que reciba elementos del tipo string
+        int _tope;//aca estamos iniciando tope que quiero que cheque en que indice estamos por eso se le dio el int
 
         public Pila(int elementos)
         {
@@ -18,8 +18,8 @@ namespace Listas
         }
         public void Agregar(string dato)
         {
-            int max = lista.Count - 1;
-            if (_tope > max)
+            
+            if (_tope > lista.Count)
             {
                 throw new Exception("Ya no hay espacio");
             }
