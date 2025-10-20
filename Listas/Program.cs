@@ -1,4 +1,6 @@
-﻿namespace Listas
+﻿using System.Linq.Expressions;
+
+namespace Listas
 {
     internal class Program
     {
@@ -43,6 +45,48 @@
             {
                 Console.WriteLine(ex.Message);
             }
+
+            try
+            {
+                Cola cola = new Cola(5);
+                cola.Agregar("A");
+                cola.Agregar("B");
+                cola.Agregar("C");
+                cola.Agregar("D");
+                cola.Agregar("E");
+
+                Console.WriteLine(cola.Imprimir());
+
+                Console.WriteLine("Eliminando un elemento");
+                cola.Eliminar();
+                Console.WriteLine(cola.Imprimir());
+
+                Console.WriteLine("Eliminando un elemento");
+                cola.Eliminar();
+                Console.WriteLine(cola.Imprimir());
+
+                Console.WriteLine("Eliminando un elemento");
+                cola.Eliminar();
+                Console.WriteLine(cola.Imprimir());
+
+                Console.WriteLine("Eliminando un elemento");
+                cola.Eliminar();
+                Console.WriteLine(cola.Imprimir());
+
+                Console.WriteLine("Eliminando un elemento");
+                cola.Eliminar();
+                Console.WriteLine(cola.Imprimir());
+
+                Console.WriteLine("Eliminando un elemento");
+                cola.Eliminar();
+                Console.WriteLine(cola.Imprimir());
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+         
+            
         }
     }
 }

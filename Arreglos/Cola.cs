@@ -1,4 +1,4 @@
-﻿namespace Arreglos
+﻿ namespace Arreglos
 {
     internal class Cola
     {

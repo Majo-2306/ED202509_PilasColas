@@ -42,7 +42,7 @@ namespace Listas
         {
             if (_tope <= 0)
             {
-                throw new Exception("Ya no hay elementos");
+                throw new Exception("La pila esta vacia");
             }
             lista.RemoveAt(_tope - 1);
             _tope--;
